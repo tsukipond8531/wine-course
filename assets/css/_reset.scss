@@ -1,0 +1,136 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: calc(1920 / 1400 * 1px);
+  scroll-behavior: smooth;
+
+  @include sp {
+    font-size: calc(1 / 768 * 100vw);
+  }
+}
+
+body {
+  font-family: Noto Sans JP;
+}
+
+.forpc {
+  display: block !important;
+
+  @include sp {
+    display: none !important;
+  }
+}
+
+.forsp {
+  display: none !important;
+
+  @include sp {
+    display: block !important;
+  }
+}
+
+h1 {
+  font-size: 60px;
+
+  @include sp {
+    font-size: 36rem;
+  }
+}
+
+h2 {
+  font-size: 40px;
+
+  @include sp {
+    font-size: 45rem;
+  }
+}
+
+h3 {
+  text-align: center;
+  font-weight: normal;
+  font-size: 36px;
+
+  @include sp {
+    font-size: 36rem;
+  }
+}
+
+h4 {
+  font-weight: normal;
+  font-size: 30px;
+
+  @include sp {
+    font-size: 24rem;
+  }
+}
+
+h5 {
+  font-weight: normal;
+  font-size: 20px;
+
+  @include sp {
+    font-size: 22rem;
+  }
+}
+
+h6 {
+  font-size: 14px;
+  font-weight: normal;
+
+  @include sp {
+    font-size: 16rem;
+  }
+}
+
+p {
+  font-size: 16px;
+  font-weight: normal;
+
+  @include sp {
+    font-size: 18rem;
+  }
+}
+
+a {
+  font-size: 13px;
+  text-decoration: none;
+  color: black;
+  display: block;
+}
+
+.text-md {
+  font-size: 12px;
+  line-height: normal;
+}
+
+.text-sm {
+  font-size: 10px;
+  line-height: normal;
+}
+
+.container {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.pc {
+  display: block;
+  @include sp {
+    display: none;
+  }
+}
+
+.sp {
+  display: none;
+  @include sp {
+    display: block;
+  }
+}

@@ -1,0 +1,246 @@
+@charset "UTF-8";
+/*!
+Theme Name: Cocoon Child
+Description: Cocoon専用の子テーマ
+Theme URI: https://wp-cocoon.com/
+Author: わいひら
+Author URI: https://nelog.jp/
+Template:   cocoon-master
+Version:    1.1.2
+*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 1.3714285714px;
+  scroll-behavior: smooth;
+}
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 0.1302083333vw;
+  }
+}
+
+body {
+  font-family: Noto Sans JP;
+}
+
+.container {
+  margin: auto;
+}
+
+.forpc {
+  display: block !important;
+}
+@media screen and (max-width: 768px) {
+  .forpc {
+    display: none !important;
+  }
+}
+
+.forsp {
+  display: none !important;
+}
+@media screen and (max-width: 768px) {
+  .forsp {
+    display: block !important;
+  }
+}
+
+h1 {
+  font-size: 60px;
+}
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 36rem;
+  }
+}
+
+h2 {
+  font-size: 40px;
+}
+@media screen and (max-width: 768px) {
+  h2 {
+    font-size: 45rem;
+  }
+}
+
+h3 {
+  text-align: center;
+  font-weight: normal;
+  font-size: 36px;
+}
+@media screen and (max-width: 768px) {
+  h3 {
+    font-size: 36rem;
+  }
+}
+
+h4 {
+  font-weight: normal;
+  font-size: 30px;
+}
+@media screen and (max-width: 768px) {
+  h4 {
+    font-size: 24rem;
+  }
+}
+
+h5 {
+  font-weight: normal;
+  font-size: 20px;
+}
+@media screen and (max-width: 768px) {
+  h5 {
+    font-size: 22rem;
+  }
+}
+
+h6 {
+  font-size: 14px;
+  font-weight: normal;
+}
+@media screen and (max-width: 768px) {
+  h6 {
+    font-size: 16rem;
+  }
+}
+
+p {
+  font-size: 16px;
+  font-weight: normal;
+}
+@media screen and (max-width: 768px) {
+  p {
+    font-size: 18rem;
+  }
+}
+
+a {
+  font-size: 13px;
+  text-decoration: none;
+  color: black;
+  display: block;
+}
+
+.text-md {
+  font-size: 12px;
+  line-height: normal;
+}
+
+.text-sm {
+  font-size: 10px;
+  line-height: normal;
+}
+
+.container {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.pc {
+  display: block;
+}
+@media screen and (max-width: 768px) {
+  .pc {
+    display: none;
+  }
+}
+
+.sp {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .sp {
+    display: block;
+  }
+}
+
+header .header_top {
+  background-color: #333333;
+}
+header .header_top .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+header .header_top .container .header_top_left {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+}
+header .header_top .container .header_top_right {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+header .header_top .container .header_top_right .header_top_right_elem {
+  border-right: 1px solid #444444;
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 25px;
+       column-gap: 25px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-left: 22px;
+  padding-right: 10px;
+}
+header .header_top .container .header_top_right .header_top_right_elem div {
+  text-align: center;
+}
+header .header_top .container .header_top_right .header_top_right_elem h5 {
+  font-weight: lighter;
+}
+header .header_center .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+header .header_center .container .header_center_left {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  -moz-column-gap: 19px;
+       column-gap: 19px;
+}
+header .header_center .container .header_center_right {
+  justify-content: end;
+  align-items: center;
+}
+@media screen and (max-width: 768px) {
+  header .header_center .container .header_center_right {
+    display: none;
+  }
+}
+header .header_center .container .header_center_right img {
+  width: 180px;
+  box-shadow: 3px 3px 5px #a3a3a3;
+}
+header .header_center .container .header_center_right img:first-child {
+  box-shadow: unset;
+  width: 156px;
+}
+header .header_bottom {
+  background: linear-gradient(to right, #D6D9D8, #CACAC8, #E7D7CB, #DFD4CB);
+}
+header .header_bottom .container ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+}
+header .header_bottom .container ul a {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}/*# sourceMappingURL=style.css.map */
